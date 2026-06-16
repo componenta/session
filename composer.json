@@ -1,0 +1,36 @@
+{
+    "name": "componenta/session",
+    "description": "Framework-agnostic session management library for PHP 8.4+",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "session",
+        "php",
+        "psr-15",
+        "middleware"
+    ],
+    "require": {
+        "php": ">=8.4",
+        "componenta/default-value": "^1.0",
+        "psr/http-message": "^1.0 || ^2.0",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Componenta\\Session\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Componenta\\Session\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
